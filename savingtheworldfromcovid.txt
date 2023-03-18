@@ -1,0 +1,538 @@
+<html><head></head><body data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed=""><section id="widget-grid" class=""><div class="row">
+	<article class="col-xs-12 hidden" id="emergency_container"></article>
+	<article class="col-xs-12" id="notifications_container">
+		<div class="alert language hidden alert-info" style="margin-bottom:10px" id="noks">Please specify at least 2 next-of-kins / immediate family members with names and phone numbers, so that they can be contacted in emergency situations.
+			<p><a class="btn language btn-primary btn-xs" href="#8/my.family.html">Specify Now</a></p>
+		</div>
+	</article>
+	<article class="col-xs-12" id="forms_container">
+		<div class="jarviswidget" id="wid-home-forms" data-widget-sortable="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false">
+			<header>
+				<ul id="tab-forms" class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#tab-myforms" id="tab-button-myforms"><span><i class="fa fa-edit"></i> Forms For Me</span></a></li>
+					<li><a data-toggle="tab" href="#tab-submissions" id="tab-button-submissions"><span><i class="fa fa-user"></i> All My Submissions</span></a></li>
+				</ul>
+			</header>
+			<div role="content"><div class="widget-body no-padding">
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="tab-myforms">
+					<div class="padding-10" id="myforms"></div>
+				</div>
+				<div class="tab-pane fade in ui-table-root ui-element" id="tab-submissions">
+					<div class="table-responsive ui-table-content"></div>
+				</div>
+			</div>
+			</div></div>
+		</div>
+	</article>
+	<article class="col-xs-12" id="ads_container">
+		<div id="ads" class="carousel slide" style="margin-bottom:10px">
+			<ol class="carousel-indicators"></ol>
+			<div class="carousel-inner"></div>
+			<a class="left carousel-control" href="#ads" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+			<a class="right carousel-control" href="#ads" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+		</div>
+	</article>
+	<article class="col-xs-12" id="buttons_container">
+		<div class="jarviswidget" id="wid-home-buttons" data-widget-sortable="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false">
+			<header>
+				<h2><strong><i class="fa fa-external-link"></i> My Shortcut Buttons</strong></h2>
+			</header>
+			<div role="content"><div class="widget-body no-padding">
+				<div class="superbox col-xs-12 superfilebox padding-10" style="height:auto" id="buttons"></div>
+			</div></div>
+		</div>
+	</article>
+	<article class="col-xs-12" id="docs_container">
+		<div class="jarviswidget" id="wid-home-docs" data-widget-sortable="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false">
+			<header>
+				<ul id="tab-docs" class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#tab-shareddocs" id="tab-button-shareddocs"><span><i class="fa fa-files-o"></i> Repositories Shared with Me</span> <span class="badge pull-right inbox-badge bg-color-greenDark" id="counter-docs-shared">0</span></a></li>
+				</ul>
+				<div class="widget-toolbar"><a class="btn language btn-sm btn-primary" href="#~/com.repos.files.html"><i class="fa fa-caret-right"></i> View All</a></div>
+			</header>
+			<div role="content"><div class="widget-body no-padding">
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="tab-shareddocs">
+					<div class="superbox col-xs-12 superfilebox" style="height:auto" id="shareddocs"></div>
+				</div>
+			</div>
+			</div></div>
+		</div>
+	</article>
+	<article class="col-xs-12" id="survey_container">
+		<div class="jarviswidget" id="wid-home-surveys" data-widget-sortable="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false">
+			<header>
+				<ul id="tab-surveys" class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#tab-surveys-pending" id="tab-button-surveys-pending"><span><i class="fa fa-hourglass-1"></i> Surveys/Polls Pending My Response</span> <span class="badge pull-right inbox-badge bg-color-greenDark" id="counter-surveys-pending">0</span></a></li>
+					<li><a data-toggle="tab" href="#tab-surveys-done" id="tab-button-surveys-done"><span><i class="fa fa-user"></i> Completed Surveys/Polls</span> <span class="badge pull-right inbox-badge bg-color-greenDark" id="counter-surveys-done">0</span></a></li>
+				</ul>
+				<div class="widget-toolbar" id="button-surveys-viewall"></div>
+			</header>
+			<div role="content"><div class="widget-body no-padding">
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="tab-surveys-pending">
+					<div class="superbox col-xs-12 superfilebox" style="height:auto" id="surveys-pending"></div>
+				</div>
+				<div class="tab-pane fade in" id="tab-surveys-done">
+					<div class="superbox col-xs-12 superfilebox" style="height:auto" id="surveys-done"></div>
+				</div>
+			</div>
+			</div></div>
+		</div>
+	</article>
+	<article class="row" id="event_announce_container"><article class="col-xs-12 col-sm-6">
+		<div class="jarviswidget ui-element" id="wid-home-calendar" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false">
+			<header>
+				<h2><strong><i class="fa fa-calendar"></i> Events</strong></h2>
+				<div class="widget-toolbar ui-element" id="button-event-calendar"></div>
+				<div class="widget-toolbar"><a class="btn language btn-sm btn-primary" href="#~/com.events.html"><i class="fa fa-caret-right"></i> View All</a></div>
+			</header>
+			<div role="content"><div class="widget-body no-padding" style="margin-top:0px">
+				<div class="ui-content" id="wid-calendar"></div>
+			</div></div>
+		</div>
+	</article><article class="col-xs-12 col-sm-6 col-md-6">
+		<div class="jarviswidget ui-table-root ui-element" id="wid-home-announcements" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false">
+			<header>
+				<h2><strong><i class="fa fa-bullhorn"></i> Announcements</strong></h2>
+				<div class="widget-toolbar ui-element" id="button-announce-add"></div>
+				<div class="widget-toolbar"><a class="btn language btn-sm btn-primary" id="announce_viewall" href="#~/com.announce.html"><i class="fa fa-caret-right"></i> View All</a></div>
+			</header>
+			<div role="content"><div class="widget-body no-padding">
+			<div class="table-responsive ui-table-content"></div>
+			</div></div>
+		</div>
+	</article></article>
+</div></section>
+
+<style>
+tr.importance1 {background-color:rgb(214, 221, 231)}
+tr.importance2 {background-color:rgb(239, 225, 179)}
+tr.importance3 {background-color:rgb(204, 101, 101)}
+table.ui-table td {overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-all;word-break:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
+</style>
+<script type="text/javascript">
+pageSetUp();
+$Page.clear(function() {
+	$Page.def('clearpage')();
+	iniForms($Page);
+})
+.variable("announce_signupchoice", function(id) {
+	$Page.json($Page.def("server.url") + "action=chart&obj=AnnounceSignup_SignupBy&id=" + id, function(data) {
+		var f = $Page.forms('signupchoice');
+		f.fields[0].value = id;
+		f.fields[2].value = data.by;
+		f.objID = $Page.md5(id + $Page.user().id);
+		f.fields[3].config.srcURL = $Page.def("server.url")+"action=chart&obj=AnnounceSignupChoice_List&id=" + id;
+		var submit_callback = function(formid, objHandle) {
+			$('#ui-modal').modal('hide');
+		};
+		f.render('#ui-modal', $Page.def("server.url")+"action=get&obj=AnnounceSignup&id=" + $Page.md5(id + $Page.user().id), function() {$('#ui-modal').css('display','block').modal({keyboard:true,backdrop:'static',show:true});}, submit_callback);
+	});
+})
+.variable("announce_info", function(id) {
+	$Page.json($Page.def("server.url") + "action=chart&obj=AnnounceInfo_GetPersonalised&id=" + id, function(data) {
+		if (!data.fields) {
+			$Page.message('View Announcement', 'There is no additional data available.');
+		} else {
+			var f = $Page.forms('info');
+			var obj = {id:id};
+			f.fields = [];
+			$.each(data.fields.split(','), function(i,v) {
+				f.fields.push({type:"nvarchar",name:"value_" + v,label:data["label_" + v],value:data["value_" + v],config:{readonly:true}});
+				obj["value_" + v] = data["value_" + v];
+			});
+			f.render('#ui-modal', "", function() {$('#ui-modal').css('display','block').modal({keyboard:true,backdrop:'static',show:true});}, null);
+		}
+	});
+})
+.variable("announce_form", function(id) {
+	var fds = $Page.forms('announce_form').fields;
+	while (fds.length) fds.pop();
+	fds.push({type:"hidden",name:"id",value:id,config:{}});
+	$Page.variables().form_submit_render(id, 'announce_form', function(data) {
+		var submit_callback = function() {
+			$('#ui-modal-fullscreen').modal('hide');
+		};
+		$Page.forms('announce_form').objID = id;
+		$Page.forms('announce_form').render('#ui-modal-fullscreen', $Page.def("server.url")+"action=chart&obj=Form_ViewSubmission&id=" + $Page.md5(id + $Page.user().id), function() {$('#ui-modal-fullscreen').css('display','block').modal({keyboard:true,backdrop:'static',show:true});}, submit_callback);
+	});
+})
+.form({id:"announce_form",title:"Announcement Reply Form",caption:"Submit",icon:"fa fa-edit",action:"command",objType:"Form_Submit",fields:[
+],template:""})
+.variable("announce_ack", function(id) {
+	$Page.jsonpost($Page.def("server.url") + "action=command&obj=Announcement_ACK", "id=" + id, function(result) {
+		$Page.idle();
+		$('#ack-' + id).remove();
+		$Page.message('Announcement Acknowledgement', 'You have successfully acknowledged this announcement. Thank you.');
+	});
+})
+.form({id:"signupchoice",shared:false,title:"View/Edit My Reply",icon:"fa fa-edit",action:"command",objType:"AnnounceSignup_AddUpdate",fields:[
+	{type:"hidden",name:"announcement",config:{}},
+	{type:"!",name:"info",label:"info",value:"This announcement requires you to sign up to one of the following available sessions. If the following list is empty, it means all sessions are full.",config:{readonly:true}},
+	{type:"nvarchar",name:"by",label:"Signup For",config:{readonly:true}},
+	{type:"choice",name:"choice",label:"Session Choice",config:{required:true,order:"label",srcURL:$Page.def("server.url")+"action=options&obj=AnnounceSignupChoice&key=0"}},
+],template:'<div class="hidden" id="field-announcement"></div>'+
+'<div class="row ui-form-row"><div class="col-xs-12" id="field-info"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-by"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-by"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-choice"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-choice"></div></div>'})
+.form({id:"info",shared:false,title:"View Announcement Info",icon:"fa fa-info",fields:[],template:''})
+
+.element({id:"element-button-calendar",type:"button",container:"button-event-calendar",config:{caption:"Export",icon:"fa fa-external-link",colour:"btn-xs btn-info",click:"form",form:{id:"calendar",src:$Page.def("server.url") + "action=chart&obj=Event_GetCalendarFeed"}}})
+.form({id:"calendar",shared:false,title:"Export Events to Google Calendar, iOS, Outlook, etc.",icon:"fa fa-external-link",objType:"Calendar",fields:[
+	{type:"nvarchar",name:"url",label:"URL",helptext:"Copy the above URL and add to your calendar app/programme/website as a new calendar feed.",config:{readonly:true}},
+],template:'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-url"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-url"></div></div>'})
+
+.variable('files_announce', new $Files('files_announce', 'announce', 'Announcement', 'Announcement', true))
+.form($Page.variables().files_announce.form())
+.element({id:"element-announcements",type:"table",container:"wid-home-announcements",config:{id:"announce"}})
+.table({id:"announce",shared:false,src:$Page.def("server.url")+"action=list&obj=Announcement&ids=",object:"Announcement",filter:true,paging:true,columns:[
+	{title:" ",codename:"display"}
+],defaultOrder:"-1",rowButtons:[
+	{caption:"View Details",icon:"fa fa-eye",colour:"bg-color-pink txt-color-white",click:"form",disable:{more:""},disable_msg:"No additional info available",form:{id:"announce_view",src:$Page.def("server.url") + "action=get&obj=Announcement&id=%id"}},
+	{caption:"Files",icon:"fa fa-file",colour:"btn-info",click:"inline",disable:{files:""},disable_msg:"No file attachment found",inline:{title:"File Attachments",title_variable:"",
+		titleHTML:$Page.variables().files_announce.buttons(),
+		renderer:function(containerid, data) {
+			$Page.variables().files_announce.render(containerid, data);
+		}}}
+],onCompleted:function(id) {
+	$('#'+id+'_wrapper').find('div.dt-toolbar').remove();
+	$('.announce-ack').each(function() {
+		var announcement = $(this).attr('id').replace('ack-', '');
+		$Page.json($Page.def("server.url") + "action=get&obj=AnnounceSignup&id=" + $Page.md5(announcement + $Page.user().id), function(result) {
+			if (!!result.id) $('#ack-' + announcement).remove();
+		});
+	});
+},highlights:[
+	{colour:'importance1', func:function(data, constants) { return (data.importance == 1); }},
+	{colour:'importance2', func:function(data, constants) { return (data.importance == 2); }},
+	{colour:'importance3', func:function(data, constants) { return (data.importance == 3); }}
+]})
+.form({id:"announce_view",shared:false,title:"View Announcement",icon:"fa fa-eye",objType:"Announcement",fields:[
+	{type:"richtext",name:"display",label:"Message",config:{readonly:true}},
+	{type:"richtext",name:"more",label:"More Info",config:{readonly:true}},
+	{type:"files",name:"files",label:"Attached Files",config:{readonly:true,type:"Announcement",name:"Announcement"}},
+],template:'<fieldset><legend style="margin-bottom:2px"><span class="icon fa fa-bullhorn"></span> Announcement Details</legend><div style="padding:8px 24px">'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-display"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-display"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-more"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-more"></div></div>'+
+'</div></fieldset><fieldset><legend style="margin-bottom:2px"><span class="icon fa fa-files-o"></span> Attached Files</legend><div style="padding:8px 24px">'+
+'<div class="row ui-form-row"><div class="col-xs-12" id="field-files"></div></div>'+
+'</div></fieldset>'})
+.form({id:"event_view",shared:false,title:"View Event",icon:"fa fa-eye",objType:"Event",fields:[
+	{type:"nvarchar",name:"title",label:"Title",config:{readonly:true}},
+	{type:"richtext",name:"more",label:"More Info",config:{readonly:true}},
+	{type:"datetime",name:"startdate",label:"From",config:{readonly:true,format:$Page.def("datetime.format")}},
+	{type:"datetime",name:"enddate",label:"To",config:{readonly:true,format:$Page.def("datetime.format")}},
+	{type:"files",name:"files",label:"Attached Files",config:{readonly:true,type:"Event",name:"Event"}},
+	{type:"bit",name:"wholeday",label:"Whole-Day Event",config:{readonly:true,trueLabel:"Yes",falseLabel:"No"}},
+	{type:"nvarchar",name:"owner_name",label:"Event Owner",config:{readonly:true}},
+],template:'<fieldset><legend style="margin-bottom:2px"><span class="icon fa fa-calendar"></span> Event Details</legend><div style="padding:8px 24px">'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-title"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-title"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-startdate"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-startdate"></div><div class="clearfix visible-xs-block visible-sm-block"></div>'+
+	'<div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-enddate"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-enddate"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-wholeday"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-wholeday"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-owner_name"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-owner_name"></div></div>'+
+'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-more"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-more"></div></div>'+
+'</div></fieldset><fieldset><legend style="margin-bottom:2px"><span class="icon fa fa-files-o"></span> Attached Files</legend><div style="padding:8px 24px">'+
+'<div class="row ui-form-row"><div class="col-xs-12" id="field-files"></div></div>'+
+'</div></fieldset>'})
+.element({id:"element-calendar",type:"calendar",container:"wid-calendar",config:{id:"calendar",
+	src:function(month) { return [	// month = YYYYMM
+		{url: $Page.def("server.url")+"action=chart&obj=Event_GetMonthlyEvents&month=" + month, type: "Event", category: "act",
+		toevent: function(o) {
+			var t = moment(o.startdate, moment.ISO_8601);
+			var t2 = (!o.enddate) ? t.clone().hour(23).minute(59) : (o.wholeday ? moment(o.enddate, moment.ISO_8601).hour(23).minute(59) : moment(o.enddate, moment.ISO_8601));
+			return {id: o.id, title: o.title, start: t.format(), end: t2.format(), className: o.type == 3 ? "bg-color-orange" : (o.wholeday ? "bg-color-blue" : "bg-color-purple"), editable: false };
+		},
+		topopover: function(o) {
+			var html = o.title + '<br><label class="label label-primary">' + $Page.constants('event_type').value(o.type) + '</label>';
+			var t = moment(o.startdate, moment.ISO_8601);
+			var t2 = (!o.enddate) ? t.clone().hour(23).minute(59) : moment(o.enddate, moment.ISO_8601);
+			if (t.format($Page.def('date.format')) == t2.format($Page.def('date.format'))) {
+				html += '<p><i class="fa fa-calendar-o" style="color:#336699;width:25px;text-align:left"></i>' +
+					(o.wholeday ? t.format($Page.def('date.format')) : t.format($Page.def('date.format')) + ' ' + t.format("hh:mm a") + ' - ' + t2.format("hh:mm a")) + '</p>';
+			} else {
+				html += '<p><i class="fa fa-calendar-o" style="color:#336699;width:25px;text-align:left"></i>' +
+					(o.wholeday ? t.format($Page.def('date.format')) + ' - ' + t2.format($Page.def('date.format')) : t.format($Page.def('datetime.format')) + ' - ' + t2.format($Page.def('datetime.format'))) + '</p>';
+			}
+			html += '<div><button class="btn language btn-info" onclick="$Page.elements(\'element-calendar\').config.view(\'Event\',\'' + o.id + '\')"><i class="fa fa-eye"></i></button></div>';
+			return html;
+		}}
+		]; },
+	view:function(type, id) {
+		$('div.calendar-popover').each(function() {
+			var popover = $.data(this, "bs.popover");
+			if (popover) $(this).popover('destroy');
+		});
+		$Page.forms('event_view').render('#ui-modal', $Page.def("server.url") + "action=get&obj=" + type + "&id=" + id, function() {$('#ui-modal').modal('show')}, null);
+	}}})
+.element({id:"element-form-submissions",type:"table",container:"tab-submissions",config:{id:"form_submissions"}})
+.table({id:"form_submissions",shared:false,src:[],object:"FormUser",filter:true,paging:true,columns:[
+	{title:"Submitted At",codename:"submitted",format:$Page.def("datetime.format")},
+	{title:"Form",codename:"form_name"},
+	{title:"Reference",codename:"sn"},
+	{title:"Status",codename:"status",constant:"form_status"},
+],defaultOrder:"-1",rowButtons:[
+	{caption:"View Submission",icon:"fa fa-eye",colour:"bg-color-pink txt-color-white",click:"handler",handler:function(data) { $Page.variables().form_view(data.id, data.form); }},
+	{caption:"Amend Submission",icon:"fa fa-edit",colour:"btn-primary",showhide:function(data) { return data.changeable && data.status == 1; },click:"url",url:{href:"#~/com.form.submit.html?id=%id"}},
+	{caption:"Cancel Submission",icon:"fa fa-trash-o",colour:"btn-danger",showhide:function(data) { return data.cancellable && data.status != 2; },click:"handler",handler:function(data) { $Page.variables().form_cancel(data.id, data.form); }},
+],onCompleted:function(id) {
+	$('#'+id+'_wrapper').find('div.dt-toolbar').remove();
+}})
+.element({id:"element-form-mysubmissions",type:"table",container:"mysubmissions",config:{id:"form_mysubmissions"}})
+.table({id:"form_mysubmissions",shared:false,src:$Page.def("server.url")+"action=chart&obj=Form_ListMySubmissions&id=",object:"FormUser",filter:true,paging:true,columns:[
+	{title:"Form",codename:"form_name",searchable:false,orderable:false},
+	{title:"Submitted At",codename:"submitted",format:$Page.def("datetime.format")},
+	{title:"Reference",codename:"sn"},
+	{title:"Status",codename:"status",constant:"form_status"},
+],defaultOrder:"-2",rowButtons:[
+	{caption:"View Submission",icon:"fa fa-eye",colour:"bg-color-pink txt-color-white",click:"handler",handler:function(data) { $Page.variables().form_view(data.id, data.form); }},
+	{caption:"Amend Submission",icon:"fa fa-edit",colour:"btn-primary",showhide:function(data) { return data.changeable && data.status == 1; },click:"url",url:{href:"#~/com.form.amend.html?id=%id"}},
+	{caption:"Cancel Submission",icon:"fa fa-trash-o",colour:"btn-danger",showhide:function(data) { return data.cancellable && data.status != 2; },click:"handler",handler:function(data) { $Page.variables().form_cancel(data.id, data.form); }},
+],onCompleted:function(id) {
+	$('#'+id+'_wrapper').find('div.dt-toolbar').remove();
+}})
+.variable("form_view", function(id, formid) {
+	var f = $Page.forms('form_view');
+	var fds = f.fields;
+	while (fds.length) fds.pop();
+	$Page.variables().form_submit_render(formid, 'form_view', function(data) {
+		fds.push({type:"nvarchar",name:"form",label:"Form",config:{readonly:true}});
+		fds.push({type:"datetime",name:"submitted",label:"Submitted At",config:{readonly:true,format:$Page.def("datetime.format")}});
+		fds.push({type:"nvarchar",name:"user",label:"Submitted By",config:{readonly:true}});
+		fds.push({type:"nvarchar",name:"sn",label:"Reference No.",config:{readonly:true}});
+		fds.push({type:"choice",name:"status",label:"Status",config:{readonly:true,options:"form_status"}});
+		fds.push({type:"ntext",name:"remarks",label:"Remarks",config:{readonly:true}});
+		f.caption = 'Close';
+		f.template = '<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-form" ></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-form" ></div><div class="clearfix visible-xs-block visible-sm-block" ></div>'+
+						'<div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-sn"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-sn"></div></div>'+
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-user"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-user"></div><div class="clearfix visible-xs-block visible-sm-block"></div>'+
+						'<div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-submitted"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-submitted"></div></div>' +
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-status"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-status"></div></div>'+
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-remarks"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-remarks"></div></div>'+
+					f.template;
+		f.objID = id;
+		var submit_callback = function() {
+			$('#ui-modal-fullscreen').modal('hide');
+		};
+		f.render('#ui-modal-fullscreen', $Page.def("server.url")+"action=chart&obj=Form_ViewSubmission&id=" + id, function() {$('#ui-modal-fullscreen').css('display','block').modal({keyboard:true,backdrop:'static',show:true});}, submit_callback);
+	});
+})
+.form({id:"form_view",shared:false,title:"View Form",icon:"fa fa-eye",objType:"Form",fields:[],template:''})
+.variable("form_cancel", function(id, formid) {
+	$Page.variables().form_submit_render(formid, 'form_cancel', function(data) {
+		var f = $Page.forms('form_cancel');
+		var fds = f.fields;
+		fds.push({type:"nvarchar",name:"form",label:"Form",config:{readonly:true}});
+		fds.push({type:"datetime",name:"submitted",label:"Submitted At",config:{readonly:true,format:$Page.def("datetime.format")}});
+		fds.push({type:"nvarchar",name:"user",label:"Submitted By",config:{readonly:true}});
+		fds.push({type:"nvarchar",name:"sn",label:"Reference No.",config:{readonly:true}});
+		fds.push({type:"choice",name:"status",label:"Status",config:{readonly:true,options:"form_status"}});
+		fds.push({type:"ntext",name:"remarks",label:"Remarks",config:{readonly:true}});
+		f.title = 'Confirm Cancel Submission for ' + data.title;
+		f.template = '<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-form" ></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-form" ></div><div class="clearfix visible-xs-block visible-sm-block" ></div>'+
+						'<div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-sn"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-sn"></div></div>'+
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-user"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-user"></div><div class="clearfix visible-xs-block visible-sm-block"></div>'+
+						'<div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-submitted"></div><div class="col-xs-9 col-sm-9 col-md-4" id="field-submitted"></div></div>' +
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-status"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-status"></div></div>'+
+					'<div class="row ui-form-row"><div class="col-xs-3 col-sm-3 col-md-2 control-label text-primary" id="label-remarks"></div><div class="col-xs-9 col-sm-9 col-md-10" id="field-remarks"></div></div>'+
+					f.template;
+		f.objID = id;
+		fds[0].value = id;
+		var submit_callback = function() {
+			$('#ui-modal-fullscreen').modal('hide');
+			$Page.variables().form_load();
+			$Page.elements('element-form-mysubmissions').rerender();
+		};
+		f.render('#ui-modal-fullscreen', $Page.def("server.url")+"action=chart&obj=Form_ViewSubmission&id=" + id, function() {$('#ui-modal-fullscreen').css('display','block').modal({keyboard:true,backdrop:'static',show:true});}, submit_callback);
+	});
+})
+.form({id:"form_cancel",shared:false,title:"Confirm Cancel Submission",caption:"Cancel",icon:"fa fa-eye",action:"command",objType:"Form_Cancel",fields:[
+	{type:"hidden",name:"id",label:"",value:"",config:{}}
+],template:''})
+.variable("viewsubmissions", function(form) {
+	var container = $('#myforms');
+	container.find('div.ui-table-root').remove();
+	container.append('<div class="ui-table-root ui-element" id="mysubmissions"><div class="table-responsive ui-table-content"></div></div>');
+	$Page.tables('form_mysubmissions').src = $Page.def("server.url")+"action=chart&obj=Form_ListMySubmissions&id=" + form;
+	$Page.elements('element-form-mysubmissions').rerender();
+})
+.variable("form_load", function() {
+	$Page.json($Page.def("server.url") + "action=chart&obj=Form_ListForHomepage", function(forms) {
+		forms.my.sort(function (a, b) {
+			if (a.title > b.title) return 1;
+			if (a.title < b.title) return -1;
+			return 0;
+		});
+		var container = $('#myforms');
+		container.empty();
+		$.each(forms.my, function(i,v) {
+			container.append('<div class="btn-group" style="display:inline-block;margin:0px 10px 6px 0px"><button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">' + v.title + ' <span class="caret"></span></button><ul class="dropdown-menu">'+
+				(v.submissions > 0 ? '<li><a href="javascript:void(0)" onclick="$Page.variables().viewsubmissions(\'' + v.id + '\')">View My ' + (v.submissions > 1 ? v.submissions + ' ' : '') + 'Submissions</a></li>' : '') +
+				(v.multiple || v.submissions == 0 ? '<li><a href="#~/com.form.submit.html?id=' + v.id + '">Fill & Submit Now</a></li>' : '') +
+				'</ul></div>');
+		});
+		$Page.tables('form_submissions').src = forms.submissions;
+		$Page.elements('element-form-submissions').rerender();
+	});
+})
+.variable("ads_load", function(ads) {
+	var container = $('#ads');
+	var ol = container.find('ol');
+	var div = container.find('div');
+	var index = 0, interval = 3;
+	$.each(ads, function(i,v) {
+		if (interval < v.interval) interval = v.interval;
+		$.each(v.photos.split(','), function(i2,v2) {
+			ol.append('<li data-target="#myCarousel" data-slide-to="' + index + '" class="' + (index == 0 ? 'active' : '') + '"></li>');
+			div.append('<div class="item img-responsive ' + (index == 0 ? 'active' : '') + '">'+
+				(v.url.indexOf('http://') == 0 || v.url.indexOf('https://') == 0 ? '<a href="' + v.url + '"' + (v.url.indexOf('https://' + window.location.host + '/index.html#') == 0 ? '' : ' target="_blank"') + '>' : '') +
+				'<img style="width:100%" src="' + $Page.def("image.url") + 'request=Advertisement&id=' + v.id + '&type=' + v2 + '">'+
+				(v.url.indexOf('http://') == 0 || v.url.indexOf('https://') == 0 ? '</a>' : '') +
+				'</div>');
+			index++;
+		});
+	});
+	if (index == 0) container.closest('#ads_container').remove();
+	else {
+		loadScript("https://cdn.avero-tech.com/js/plugin/bootstrap-slider/bootstrap-slider.min.js", function() {
+			container.carousel({
+				interval : 1000 * interval,
+				cycle : true
+			});
+		});
+	}
+})
+.variable("buttons_load", function(buttons) {
+	buttons.sort(function (a, b) {
+		if (a.rank > b.rank) return 1;
+		if (a.rank < b.rank) return -1;
+		return 0;
+	});
+	var container = $('#buttons');
+	container.empty().removeClass('hidden').addClass('hidden');
+	$.each(buttons, function(i,v) {
+		container.append('<div class="superbox-list" style="width:120px;height:auto;text-align:center"><a href="javascript:void(0)" onclick="$Page.variables().button_click(\'' + v.id + '\')" id="button-' + v.id + '"><img src="' + $Page.def('image.cdn') + 'request=preview&type=Link&id=' + v.id + '" class="superbox-img" style="width:100px;height:100px" title="' + v.title + '" onerror="this.onerror=null;this.src=\'' + $Page.def('cdn') + 'img/default/Link/preview.png\';"><br>' + v.title + '</a></div>');
+	});
+	if (buttons.length) container.removeClass('hidden');
+	else container.closest('#buttons_container').remove();
+})
+.variable("button_click", function(button) {
+	$Page.json($Page.def("server.url") + "action=chart&obj=Link_Click&id=" + button, function(data) {
+		if (!data.length) {
+			$Page.message('Shortcut Button','The link is currently not accessible. Please try again later.');
+		} else if (data.length == 1) {
+			location.href = data[0].value;
+		} else {
+			var modal = $('#ui-modal');
+			modal.find('.modal-title').text('Please select a link to continue:');
+			var o = modal.find('.modal-body').empty().append('<div class="padding-10 text-center">' + $('#button-' + button).html() + '</div>');
+			$.each(data, function(i,v) {
+				o.append('<a class="btn btn-block btn-' + (v.admin ? 'primary' : 'success') + '" style="margin-bottom:8px" href="javascript:void(0)" onclick="$(\'#ui-modal\').modal(\'hide\');location.href=\'' + v.value + '\';">' + v.label + '</a>');
+			});
+			modal.css('display','block').modal({keyboard:true,backdrop:'static',show:true});
+		}
+	});
+})
+.variable("docs_load", function() {
+	sessionStorage.setItem('docs.return','#~/home.html');
+	$Page.json($Page.def("server.url") + "action=chart&obj=DocumentCategory_ListForHomepage", function(docs) {
+		docs.shared.sort(function (a, b) {
+			if (a.label > b.label) return 1;
+			if (a.label < b.label) return -1;
+			return 0;
+		});
+		var container = $('#shareddocs');
+		container.empty().removeClass('hidden').addClass('hidden');
+		$.each(docs.shared, function(i,v) {
+			container.append('<div class="superbox-list" style="width:120px;height:auto;text-align:center"><a href="#~/com.repo.html?id=' + v.value + '"><img src="' + $Page.def('image.cdn') + 'request=preview&type=DocumentCategory&id=' + v.value + '" class="superbox-img" style="width:100px;height:100px" title="' + v.label + '" onerror="this.onerror=null;this.src=\'' + $Page.def('cdn') + 'img/default/DocumentCategory/preview.png\';"><br>' + v.label + '</a></div>');
+		});
+		if (docs.shared.length) container.removeClass('hidden');
+		$('#counter-docs-shared').text('' + docs.shared.length);
+	});
+})
+
+.variable("surveys_load", function(surveys) {
+	surveys.sort(function (a, b) {
+		if (a.title > b.title) return 1;
+		if (a.title < b.title) return -1;
+		return 0;
+	});
+	var container = $('#surveys-pending');
+	container.empty().removeClass('hidden').addClass('hidden');
+	var count_pending = 0;
+	$.each(surveys, function(i,v) {
+		if (surveys.completed) return true;
+		count_pending++;
+		container.append('<div style="display:inline-block;margin:0px 10px 6px 0px"><a class="btn btn-default btn-sm" href="' +
+			(v.survey ? '#~/com.survey.view.html?id=' + v.id : '#~/com.poll.view.html?id=' + v.id) +
+			'">' + v.title + ' <i class="fa fa-caret-right"></i></a></div>');
+	});
+	if (count_pending > 0) container.removeClass('hidden');
+	container = $('#surveys-done');
+	container.empty().removeClass('hidden').addClass('hidden');
+	var count_done = 0;
+	$.each(surveys, function(i,v) {
+		if (!surveys.completed) return true;
+		count_done++;
+		container.append('<div style="display:inline-block;margin:0px 10px 6px 0px"><a class="btn btn-default btn-sm" href="' +
+			(v.survey ? '#~/com.survey.view.html?id=' + v.id : '#~/com.poll.view.html?id=' + v.id) +
+			'">' + v.title + ' <i class="fa fa-caret-right"></i></a></div>');
+	});
+	if (count_done > 0) container.removeClass('hidden');
+	$('#counter-surveys-pending').text('' + count_pending);
+	$('#counter-surveys-done').text('' + count_done);
+})
+.element({id:"element-button-surveys-viewall",type:"dropdowns",container:"button-surveys-viewall",config:{caption:"View All",icon:"fa fa-caret-right",colour:"btn-xs btn-primary pull-right",styles:"margin:4px 0px 0px 0px"}})
+.element({id:"element-button-surveys-viewall-1",type:"dropdown",container:"element-button-surveys-viewall",config:{caption:"View All Surveys",icon:"fa fa-fw fa-edit",click:"url",url:{href:"#~/com.surveys.html"}}})
+.element({id:"element-button-surveys-viewall-2",type:"dropdown",container:"element-button-surveys-viewall",config:{caption:"View All Polls",icon:"fa fa-fw fa-bar-chart",click:"url",url:{href:"#~/com.polls.html"}}})
+
+.element({id:"element-button-addannounce",type:"button",container:"button-announce-add",config:{caption:"New",icon:"fa fa-plus",colour:"btn-xs btn-success",click:"url",url:{href:"#8/com.announce.new.html"}}})
+
+var login_redirect = sessionStorage.getItem('login-redirect');
+if (!!login_redirect) {
+	sessionStorage.setItem('login-redirect', '');
+	location.href = '#' + login_redirect;
+} else {
+	loadScript("https://cdn.avero-tech.com/js/plugin/fullcalendar/jquery.fullcalendar.min.js", function() {
+		$Page.json($Page.def("server.url")+"action=chart&obj=HomePage_Student", function(data) {
+
+			$.each(['ads','buttons','forms','docs','survey','event_announce','modules'], function(i,v) {
+				if (data.widgets.indexOf(v) == -1) $('#' + v + '_container').remove();
+			});
+			var emergency_container = $('#emergency_container');
+			$.each(data.widgets.split(','), function(i,v) {
+				var o = $('#' + v + '_container').detach().insertBefore(emergency_container);
+			});
+			emergency_container.detach().insertBefore('#' + data.widgets.split(',')[0] + '_container');
+			if (data.widgets.indexOf('event_announce') >= 0 && data.evt_announce < 3) {
+				var event_announce_container = $('#event_announce_container');
+				event_announce_container.find('article').eq(2 - data.evt_announce).remove();
+				event_announce_container.find('article').removeClass('col-sm-6').addClass('col-sm-12');
+			}
+
+			if (!data.addannounce) $('#button-announce-add').remove();
+			else $('#announce_viewall').attr('href', '#8/com.announce.authors.html');
+			if (data.noks >= 2) $('#noks').remove();
+			$Page.variable("profile", data.profile);
+			$Page.tables('announce').src = data.announcements;
+			$Page.render(function() {
+				var span = $('div#ribbon').find('span');
+				span.eq(0).html('<i class="fa fa-home fa-fw"></i> <font class="language">Home Dashboard</font>');
+				if (data.widgets.indexOf('forms') >= 0) $Page.variables().form_load();
+				if (data.widgets.indexOf('docs') >= 0) $Page.variables().docs_load();
+				if (data.widgets.indexOf('survey') >= 0) $Page.variables().surveys_load(data.surveys);
+				if (data.widgets.indexOf('buttons') >= 0) $Page.variables().buttons_load(data.buttons);
+				if (data.widgets.indexOf('ads') >= 0) $Page.variables().ads_load(data.ads);
+				if (data.emergency) {
+					loadScript("8/emergency.js?v=2", function() {
+						var container = $('#emergency_container').removeClass('hidden');
+						renderEmergencyAttendance($Page, container, null);
+					});
+				}
+			});
+		});
+	});
+}
+</script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
